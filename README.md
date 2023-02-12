@@ -20,7 +20,7 @@ $ roslaunch darknet_ros darknet_ros.launch
 ```
 <img src="https://github.com/nkegke/files/blob/main/follow/yolo.png" alt="yolo" style="width: 30vw;"/>
 
-* Follow-me simulation
+* Follow-me simulation (~70FPS w/ NVIDIA GeForce GTX 1050 Ti)
 ```console
 $ python yollow.py
 ```
