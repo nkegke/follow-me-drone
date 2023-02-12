@@ -19,11 +19,6 @@ class VelocityMonitor(object):
         o1 = msg.pose.pose.orientation.w
         o2 = msg.pose.pose.orientation.z
 
-        #fix z
-        # if self.goal[2] - z >= 0.01:
-        #     move_val = Twist()
-        #     move_val.linear.z = 1
-        #     self.pub.publish(move_val)
         if np.abs(self.goal[2] - z) >= 0.1:
             if self.goal[2] > z:
                 move_val = Twist()
@@ -34,43 +29,21 @@ class VelocityMonitor(object):
                 move_val.linear.z = -1
                 self.pub.publish(move_val) 
 
-        #fix x
         elif x >= self.goal[0] + 0.1:
             move_val = Twist()
             move_val.linear.x = -1
             self.pub.publish(move_val)
-        # elif np.abs(self.goal[0] - x) >= 0.1:
-        #     if self.goal[0] > x:
-        #         move_val = Twist()
-        #         move_val.linear.x = 1
-        #         self.pub.publish(move_val) 
-        #     else:
-        #         move_val = Twist()
-        #         move_val.linear.x = -1
-        #         self.pub.publish(move_val) 
 
-        #fix y
         elif y >= self.goal[1] + 0.001:
             move_val = Twist()
             move_val.linear.y = -1
             self.pub.publish(move_val)
-        # elif np.abs(self.goal[1] - y) >= 0.1:
-        #     if self.goal[1] > y:
-        #         move_val = Twist()
-        #         move_val.linear.y = 1
-        #         self.pub.publish(move_val) 
-        #     else:
-        #         move_val = Twist()
-        #         move_val.linear.y = -1
-        #         self.pub.publish(move_val)
 
-        #fix orientation
         elif o1 >= 0.707 + 0.01 and o2 >= -0.707 + 0.01:
             move_val = Twist()
             move_val.angular.z = -1
             self.pub.publish(move_val)
 
-        #hover
         else:
             hover = Twist()
             hover.linear.z = 0.0000001
