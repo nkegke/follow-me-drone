@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+
+<launch>
+  <include file="~/catkin_ws/src/hector_gazebo/hector_gazebo_worlds//launch/start.launch"/>
+
+  <!-- Spawn simulated quadrotor uav -->  
+  <include file="$(find hector_quadrotor_gazebo)/launch/spawn_quadrotor.launch" >
+    <arg name="model" value="$(find hector_quadrotor_description)/urdf/quadrotor_downward_cam.gazebo.xacro"/>
+    <arg name="controllers" value="
+        controller/attitude
+        controller/velocity
+        controller/position
+        "/>
+  </include>
+
+  <!-- Start rviz visualization with preset config -->
+  <!-- <node pkg="rviz" type="rviz" name="rviz" args="-d $(find hector_quadrotor_demo)/rviz_cfg/outdoor_flight.rviz"/> -->
+
+</launch>
+

@@ -1,0 +1,68 @@
+<?xml version="1.0" ?>
+<sdf version="1.5">
+   <world name="default">
+      <include>
+         <uri>model://ground_plane</uri>
+      </include>
+      <!-- A global light source -->
+      <include>
+         <uri>model://sun</uri>
+      </include>
+     <actor name="actor">
+        <skin>
+           <filename>~/catkin_ws/src/hector_gazebo/hector_gazebo_worlds/worlds/moonwalk.dae</filename>
+           <scale>1.0</scale>
+        </skin>
+        <pose>-4.760974 -0.088562 0 0 0 0</pose>
+        <animation name="walking">
+           <filename>~/catkin_ws/src/hector_gazebo/hector_gazebo_worlds/worlds/walk.dae</filename>
+           <scale>1.000000</scale>
+           <interpolate_x>true</interpolate_x>
+        </animation>
+        <script>
+           <loop>true</loop>
+           <delay_start>5.000000</delay_start>
+           <auto_start>true</auto_start>
+           <trajectory id="0" type="walking">
+              <waypoint>
+                  <time>0</time>
+                  <pose>-4.760974 -0.088562 0 0 0 4.71</pose>
+              </waypoint>
+              <waypoint>
+                  <time>6</time>
+                  <pose>-4.760974 -2.088562 0 0 0 4.71</pose>
+              </waypoint>
+              <waypoint>
+                  <time>7</time>
+                  <pose>-4.760974 -2.088562 0 0 0 0</pose>
+              </waypoint>
+              <waypoint>
+                  <time>13</time>
+                  <pose>-1.760974 -2.088562 0 0 0 0</pose>
+              </waypoint>
+              <waypoint>
+                  <time>14</time>
+                  <pose>-1.760974 -2.088562 0 0 0 1.57</pose>
+              </waypoint>
+              <waypoint>
+                  <time>20</time>
+                  <pose>-1.760974 -0.088562 0 0 0 1.57</pose>
+              </waypoint>
+              <waypoint>
+                  <time>21</time>
+                  <pose>-1.760974 -0.088562 0 0 0 3.14</pose>
+              </waypoint>
+              <waypoint>
+                  <time>27</time>
+                  <pose>-4.760974 -0.088562 0 0 0 3.14</pose>
+              </waypoint>
+              <waypoint>
+                  <time>28</time>
+                  <pose>-4.760974 -0.088562 0 0 0 4.71</pose>
+              </waypoint>
+          </trajectory>
+        </script>
+     </actor>
+   </world>
+</sdf>
+
