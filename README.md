@@ -71,17 +71,17 @@ $ echo -e "source ~/catkin_ws/devel/setup.bash" >> .bashrc
 
 * ros.yaml: ```~/catkin_ws/src/darknet_ros/darknet_ros/config/```
 
-* act.world: ```~/catkin_ws/src/hector_gazebo/hector_gazebo_worlds/world```
+* act.world: ```~/catkin_ws/src/hector_gazebo/hector_gazebo_worlds/world/```
 
-* start.launch: ```~/catkin_ws/src/hector_gazebo/hector_gazebo_worlds/launch```
+* start.launch: ```~/catkin_ws/src/hector_gazebo/hector_gazebo_worlds/launch/```
 	
-* outdoor_flight_gazebo.launch: ```~/catkin_ws/src/hector_quadrotor/hector_quadrotor_demo/launch```
+* outdoor_flight_gazebo.launch: ```~/catkin_ws/src/hector_quadrotor/hector_quadrotor_demo/launch/```
 
 * quadrotor_downward_cam.gazebo.xacro: ```~/catkin_ws/src/hector_quadrotor/hector_quadrotor_description/urdf/```
 
 * quadrotor_downward_cam.urdf.xacro: ```~/catkin_ws/src/hector_quadrotor/hector_quadrotor_description/urdf/```
 	
-* walk.dae: ```~/catkin_ws/src/hector_gazebo/hector_gazebo_worlds/world```
+* walk.dae: ```~/catkin_ws/src/hector_gazebo/hector_gazebo_worlds/world/```
 
-* moonwalk.dae: ```~/catkin_ws/src/hector_gazebo/hector_gazebo_worlds/world```
+* moonwalk.dae: ```~/catkin_ws/src/hector_gazebo/hector_gazebo_worlds/world/```
 	
