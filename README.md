@@ -12,6 +12,7 @@ $ roslaunch hector_quadrotor_demo outdoor_flight_gazebo.launch
 $ ./enable_motors.sh
 ```
 <img src="https://github.com/nkegke/files/blob/main/follow/set1.png" alt="set1" style="width: 15vw;"/> <img src="https://github.com/nkegke/files/blob/main/follow/set2.png" alt="set2" style="width: 15vw;"/>
+
 <img src="https://github.com/nkegke/files/blob/main/follow/set3.png" alt="set3" style="width: 15vw;"/> <img src="https://github.com/nkegke/files/blob/main/follow/set4.png" alt="set4" style="width: 15vw;"/>
 
 * Start Darknet YOLOv3
@@ -25,6 +26,7 @@ $ roslaunch darknet_ros darknet_ros.launch
 $ python yollow.py
 ```
 <img src="https://github.com/nkegke/files/blob/main/follow/start1.png" alt="start1" style="width: 15vw;"/> <img src="https://github.com/nkegke/files/blob/main/follow/start2.png" alt="start2" style="width: 15vw;"/>
+
 <img src="https://github.com/nkegke/files/blob/main/follow/start3.png" alt="start3" style="width: 15vw;"/> <img src="https://github.com/nkegke/files/blob/main/follow/start4.png" alt="start4" style="width: 15vw;"/>
 
 ## Prerequisites
